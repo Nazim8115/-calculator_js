@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.calculator{
+    margin: 17vh auto;
+    width: 500px;
+    height: 485px;
+    background-color:rgb(224, 220, 220);
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    border-radius: 5px;
+    flex-direction: column;
+
+}
+.title{
+    margin-left: 12px;
+    margin-top: 30px;
+    height: 45px;
+    width: 95%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+   
+}.title h2{
+    color: white;    
+}
+
+#display{
+    margin-top: 12px;
+    margin-left: 15px;
+    background-color:rgba(255, 255, 255, 0.986);
+    height: 80px;
+    width: 95%;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+   
+}
+
+.keypad{
+    background-color: white;
+    margin-top: 12px;
+    margin-left: 15px;
+    width: 95%;
+    height: 280px;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons {
+    font-family: 'Lora', serif;
+    height: auto;
+    /* min-height: 48px; */
+    height: 55px;
+    width: 25%;
+    border: 1px solid rgb(224, 220, 220);
+    border-top: 0;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+.buttons[data-value="0"]{
+    width: 50%;
+}
+
+.buttons[data-value="="]{
+    background-color:rgb(211, 73, 73) ;
+    color: white;
+}
+
+.buttons:nth-child(4n) {
+    background-color:rgb(211, 73, 73) ;
+    color: white;
+}
+.buttons:hover {
+    background-color:rgb(243, 153, 89);
+  
+}
